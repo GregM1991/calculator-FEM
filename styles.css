@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap");
+
+:root {
+  --text: #ffe53d;
+  --dark-purple: #17062a;
+  --mid-dark-purple: #1e0936;
+  --mid-mid-purple: #331c4d;
+  --mid-light-purple: #6c34ac;
+  --light-purple: #8631af;
+  --teal: #00ded0;
+}
+
+* {
+  font-family: "Spartan", sans-serif;
+  color: var(--text);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--dark-purple);
+  font-weight: 700;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.calculator-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+.calculator {
+  display: grid;
+  grid-template-rows: 76px 152px 1fr;
+  height: 708px;
+  width: 540px;
+}
+
+.header {
+  display: flex;
+  font-size: 32px;
+  margin-bottom: 32px;
+}
+
+.input-screen {
+  text-align: right;
+  font-size: 48px;
+  letter-spacing: -0.8;
+  padding: 38px 32px 36px;
+  border-radius: 10px;
+  background-color: var(--mid-dark-purple);
+  margin-bottom: 24px;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-gap: 24px;
+  background-color: var(--mid-dark-purple);
+  padding: 24px;
+}
+
+.btn {
+  background: hsl(340deg 100% 32%);
+  border-radius: 12px;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  outline-offset: 4px;
+  background: var(--light-purple);
+}
+
+.front {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  font-size: 32px;
+  background: var(--mid-mid-purple);
+  transform: translateY(-6px);
+  height: 100%;
+  width: 100%;
+}
+
+.btn:active .front {
+  transform: translateY(-2px);
+}
+
+.btn-text > .front {
+  font-size: 20px;
+  color: #fff;
+}
+
+.teal {
+  background-color: var(--teal);
+  color: #fff;
+}
+
+.btn-lge {
+  grid-column: span 2;
+}
+
+.attribution {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: var(--light-purple);
+}
