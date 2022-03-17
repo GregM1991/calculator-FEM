@@ -17,7 +17,10 @@
     <div class="calculator-container">
       <div class="calculator">
         <div class="header">calc</div>
-        <input type="number" value="0" class="input-screen" />
+        <div class="input-screen">
+          <span class="previous-operand" id="previous-operand"></span>
+          <span class="current-operand" id="current-operand">0</span>
+        </div>
         <div class="buttons">
           <button class="pushable int">
             <span class="shadow"></span>
@@ -92,7 +95,7 @@
           <button id="divide" class="pushable">
             <span class="shadow"></span>
             <span class="edge"></span>
-            <span class="front">/</span>
+            <span class="front">÷</span>
           </button>
           <button id="multiply" class="pushable">
             <span class="shadow"></span>
@@ -106,7 +109,7 @@
           </button>
           <button id="equate" class="pushable btn-lge teal">
             <span class="shadow"></span>
-            <span class="edge"></span>
+            <span class="edge-teal"></span>
             <span class="front">=</span>
           </button>
         </div>
