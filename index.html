@@ -16,7 +16,20 @@
   <body>
     <div class="calculator-container">
       <div class="calculator">
-        <div class="header">calc</div>
+        <div class="header-container">
+          <h1 class="header">calc</h1>
+          <div class="theme-picker-container">
+            <span>THEME</span>
+            <div class="theme-picker">
+              <div class="number-container">
+                <span>1</span><span>2</span><span>3</span>
+              </div>
+              <div class="picker">
+                <span id="ball" class="ball"></span>
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="input-screen">
           <span class="previous-operand" id="previous-operand"></span>
           <span class="current-operand" id="current-operand">0</span>
@@ -39,7 +52,7 @@
           </button>
           <button id="del" class="pushable btn-text">
             <span class="shadow"></span>
-            <span class="edge"></span>
+            <span class="secondary-edge"></span>
             <span class="front">DEL</span>
           </button>
           <button class="pushable int">
@@ -82,7 +95,7 @@
             <span class="edge"></span>
             <span class="front">-</span>
           </button>
-          <button class="pushable">
+          <button class="pushable int">
             <span class="shadow"></span>
             <span class="edge"></span>
             <span class="front">.</span>
@@ -104,7 +117,7 @@
           </button>
           <button id="reset" class="pushable btn-lge btn-text">
             <span class="shadow"></span>
-            <span class="edge"></span>
+            <span class="secondary-edge"></span>
             <span class="front">RESET</span>
           </button>
           <button id="equate" class="pushable btn-lge teal">
@@ -117,10 +130,10 @@
     </div>
 
     <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Greg Martin</a>.
+      Challenge by &nbsp
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
+        Frontend Mentor</a
+      >. Coded by &nbsp <a href="#">Greg Martin</a>.
     </div>
     <script src="./index.js" />
   </body>
