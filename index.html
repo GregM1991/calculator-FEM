@@ -16,97 +16,113 @@
   <body>
     <div class="calculator-container">
       <div class="calculator">
-        <div class="header">calc</div>
-        <input type="number" value="0" class="input-screen" />
+        <div class="header-container">
+          <h1 class="header">calc</h1>
+          <div class="theme-picker-container">
+            <span>THEME</span>
+            <div class="theme-picker">
+              <div class="number-container">
+                <span>1</span><span>2</span><span>3</span>
+              </div>
+              <div class="picker">
+                <span id="ball" class="ball"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="input-screen">
+          <span class="previous-operand" id="previous-operand"></span>
+          <span class="current-operand" id="current-operand">0</span>
+        </div>
         <div class="buttons">
-          <button class="pushable">
+          <button class="pushable int">
             <span class="shadow"></span>
             <span class="edge"></span>
             <span class="front">8</span>
           </button>
-          <button class="pushable">
+          <button class="pushable int">
             <span class="shadow"></span>
             <span class="edge"></span>
             <span class="front">7</span>
           </button>
-          <button class="pushable">
+          <button class="pushable int">
             <span class="shadow"></span>
             <span class="edge"></span>
             <span class="front">9</span>
           </button>
-          <button class="pushable btn-text">
+          <button id="del" class="pushable btn-text">
             <span class="shadow"></span>
-            <span class="edge"></span>
+            <span class="secondary-edge"></span>
             <span class="front">DEL</span>
           </button>
-          <button class="pushable">
+          <button class="pushable int">
             <span class="shadow"></span>
             <span class="edge"></span>
             <span class="front">4</span>
           </button>
-          <button class="pushable">
+          <button class="pushable int">
             <span class="shadow"></span>
             <span class="edge"></span>
             <span class="front">5</span>
           </button>
-          <button class="pushable">
+          <button class="pushable int">
             <span class="shadow"></span>
             <span class="edge"></span>
             <span class="front">6</span>
           </button>
-          <button class="pushable">
+          <button id="add" class="pushable">
             <span class="shadow"></span>
             <span class="edge"></span>
             <span class="front">+</span>
           </button>
-          <button class="pushable">
+          <button class="pushable int">
             <span class="shadow"></span>
             <span class="edge"></span>
             <span class="front">1</span>
           </button>
-          <button class="pushable">
+          <button class="pushable int">
             <span class="shadow"></span>
             <span class="edge"></span>
             <span class="front">2</span>
           </button>
-          <button class="pushable">
+          <button class="pushable int">
             <span class="shadow"></span>
             <span class="edge"></span>
             <span class="front">3</span>
           </button>
-          <button class="pushable">
+          <button id="subtract" class="pushable">
             <span class="shadow"></span>
             <span class="edge"></span>
             <span class="front">-</span>
           </button>
-          <button class="pushable">
+          <button class="pushable int">
             <span class="shadow"></span>
             <span class="edge"></span>
             <span class="front">.</span>
           </button>
-          <button class="pushable">
+          <button class="pushable int">
             <span class="shadow"></span>
             <span class="edge"></span>
             <span class="front">0</span>
           </button>
-          <button class="pushable">
+          <button id="divide" class="pushable">
             <span class="shadow"></span>
             <span class="edge"></span>
-            <span class="front">/</span>
+            <span class="front">÷</span>
           </button>
-          <button class="pushable">
+          <button id="multiply" class="pushable">
             <span class="shadow"></span>
             <span class="edge"></span>
             <span class="front">x</span>
           </button>
-          <button class="pushable btn-lge btn-text">
+          <button id="reset" class="pushable btn-lge btn-text">
             <span class="shadow"></span>
-            <span class="edge"></span>
+            <span class="secondary-edge"></span>
             <span class="front">RESET</span>
           </button>
-          <button class="pushable btn-lge teal">
+          <button id="equate" class="pushable btn-lge teal">
             <span class="shadow"></span>
-            <span class="edge"></span>
+            <span class="edge-teal"></span>
             <span class="front">=</span>
           </button>
         </div>
@@ -114,10 +130,10 @@
     </div>
 
     <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Greg Martin</a>.
+      Challenge by &nbsp
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
+        Frontend Mentor</a
+      >. Coded by &nbsp <a href="#">Greg Martin</a>.
     </div>
     <script src="./index.js" />
   </body>
